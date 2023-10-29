@@ -46,22 +46,14 @@ body {
 </style>
 </head>
 <body>
-
-<div class="header">
-  <h2>Anurag's Blog</h2>
-</div>
-{% for post in posts reversed %}
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <a style="text-decoration: none; color: black;" href="/post/{{post.title}}">
-        <h2>{{post.title}}</h2>
-        <h5>{{post.date}}</h5>
-        <p>{{post.body|truncatewords:20}}</p>
-      </a>
+        <h2>{{posts.title}}</h2>
+        <h5>{{posts.date}}</h5>
+        <p>{{posts.body}}</p>
     </div>
   </div>
 </div>
-{% endfor %}
 </body>
 </html>
